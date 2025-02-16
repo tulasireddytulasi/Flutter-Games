@@ -1,4 +1,5 @@
 import 'package:flame/game.dart';
+import 'package:flame_examples/examples/router_component_example.dart';
 import 'package:flame_examples/examples/text_cmp_example.dart';
 import 'package:flame_examples/ping_pong_game/bouncing_ball_example.dart';
 import 'package:flame_examples/examples/camera_component_example.dart';
@@ -15,6 +16,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final List<FlameGame> _games = [
+    RouterGame(),
     BouncingBallExample(),
     TextExample(),
     DragEventsGame(),
@@ -23,6 +25,7 @@ class _HomeState extends State<Home> {
   ];
 
   final List<String> _names = [
+    "RouterGame",
     "BouncingBallExample",
     "Text Component Example",
     "DragEventsGame",
